@@ -3,20 +3,20 @@ package steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pages.ItemPage;
+import utilities.BaseClass;
 
-public class ItemPageSteps {
+import java.util.concurrent.TimeUnit;
+
+public class ItemPageSteps extends BaseClass {
     @And("the user clicks on the ADD TO CART button")
-    public void theUserClicksOnTheADDTOCARTButton() {
+    public void theUserClicksOnTheADDTOCARTButton() throws InterruptedException {
         ItemPage.clickOnAddToCartButton();
+        TimeUnit.SECONDS.sleep(5);
     }
 
-    @And("the user clicks on Shopping cart on the menu")
+    @Then("the user clicks on Shopping cart on the menu")
     public void theUserClicksOnShoppingCartOnTheMenu() {
         ItemPage.clickOnShoppingCartItemMenu();
     }
 
-    @Then("the user waits for notification")
-    public void theUserWaitsForNotification() {
-        ItemPage.waitForNotification();
-    }
 }

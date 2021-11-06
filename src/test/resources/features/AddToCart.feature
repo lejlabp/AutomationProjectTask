@@ -6,8 +6,7 @@ Feature: Adding item to the cart
     And the user clicks on the Search button
     And the user clicks on the requested item "<itemName>"
     And the user clicks on the ADD TO CART button
-    Then the user waits for notification
-    And the user clicks on Shopping cart on the menu
+    Then the user clicks on Shopping cart on the menu
     And the user validates that the requested item is successfully added to the cart "<itemName>"
     Examples:
       | itemName          |

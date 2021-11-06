@@ -38,7 +38,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Sample-Cucumber-TestNG</projectName>
+                            <projectName>NonCommerceAutomation</projectName>
                             <skip>false</skip>
                             <outputDirectory>reports/html-reports</outputDirectory>
                             <inputDirectory>target/cucumber-reports</inputDirectory>
@@ -61,7 +61,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.3.0</version>
+            <version>7.0.0</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>

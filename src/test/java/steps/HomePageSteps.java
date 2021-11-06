@@ -1,5 +1,7 @@
 package steps;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -9,9 +11,18 @@ import utilities.BaseClass;
 
 public class HomePageSteps extends BaseClass {
 
+    @Before
+    public void setup() {
+        setDriver();
+    }
+
+    @After
+    public void teardown() {
+        closeDriver();
+    }
+
     @Given("The user navigates to the nonCommerce portal")
     public void theUserNavigatesToTheNonCommercePortal() {
-        setDriver();
         openNonCommercePortal();
     }
 
