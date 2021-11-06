@@ -12,13 +12,13 @@ import pages.HomePage;
 public class HomePageSteps extends BaseClass {
 
     @Before
-    public void setup(){
+    public void setup() {
         setDriver();
     }
 
     @After
-    public void teardown(){
-       closeDriver();
+    public void teardown() {
+        closeDriver();
     }
 
     @Given("Launch Application2")
@@ -40,4 +40,5 @@ public class HomePageSteps extends BaseClass {
     public void theUserClicksOnTheSearchButton() {
         HomePage.clickSearchButton();
     }
+
 }

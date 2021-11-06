@@ -9,11 +9,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:target/cucumber-reports/cucumber.json"
         },
         features = {"src/test/resources/features"},
-        glue = {"steps"},
-        tags = "@test1"
+        glue = {"steps"}
 )
-
 public class TestRunner extends AbstractTestNGCucumberTests {
-
-
 }
