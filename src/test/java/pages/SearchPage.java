@@ -1,9 +1,10 @@
 package pages;
 
 import org.openqa.selenium.By;
+import utilities.Util;
 
-public class SearchPage extends BaseClass {
+public class SearchPage {
     public static void clickOnItem(String itemName) {
-        fluentWait(By.xpath("//*[text()='" + itemName + "']")).click();
+        Util.fluentWait(By.xpath("//*[text()='" + itemName + "']")).click();
     }
 }
