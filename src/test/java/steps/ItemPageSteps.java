@@ -3,11 +3,11 @@ package steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pages.ItemPage;
-import utilities.BaseClass;
+import utilities.TestBase;
 
 import java.util.concurrent.TimeUnit;
 
-public class ItemPageSteps extends BaseClass {
+public class ItemPageSteps extends TestBase {
     @And("the user clicks on the ADD TO CART button")
     public void theUserClicksOnTheADDTOCARTButton() throws InterruptedException {
         ItemPage.clickOnAddToCartButton();

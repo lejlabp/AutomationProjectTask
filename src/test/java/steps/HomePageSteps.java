@@ -6,10 +6,10 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import pages.HomePage;
-import utilities.BaseClass;
+import utilities.TestBase;
 
 
-public class HomePageSteps extends BaseClass {
+public class HomePageSteps extends TestBase {
 
     @Before
     public void setup() {

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Wait;
 import java.time.Duration;
 import java.util.function.Function;
 
-public final class Util extends BaseClass {
+public final class Util extends TestBase {
 
     private static final int timeoutDuration = 10;
     private static final int pollingFrequency = 2;
@@ -19,7 +19,7 @@ public final class Util extends BaseClass {
     }
 
     public static WebElement fluentWait(final By locator) {
-        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+        Wait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(timeoutDuration))
                 .pollingEvery(Duration.ofSeconds(pollingFrequency))
                 .ignoring(NoSuchElementException.class);
